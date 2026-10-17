@@ -1,0 +1,476 @@
+GitHub - deepseek-ai/DeepSeek-OCR-2: Visual Causal Flow · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+{{ message }}
+deepseek-ai
+DeepSeek-OCR-2
+Repository navigation
+Code
+Issues
+51
+(
+51
+)
+Pull requests
+4
+(
+4
+)
+Actions
+Projects
+Security and quality
+Insights
+More
+items
+DeepSeek-OCR-2
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+311
+(
+311
+)
+Star
+3.5k
+(
+3.5k
+)
+You must be signed in to star a repository
+About
+Visual Causal Flow
+Resources
+Readme
+Apache-2.0 license
+Activity
+Custom properties
+Stars
+3.5k
+stars
+Watchers
+22
+watching
+Forks
+311
+forks
+Report repository
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+8 Commits
+8 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+DeepSeek-OCR2-master
+DeepSeek-OCR2-master
+assets
+assets
+DeepSeek_OCR2_paper.pdf
+DeepSeek_OCR2_paper.pdf
+LICENSE.txt
+LICENSE.txt
+README.md
+README.md
+requirements.txt
+requirements.txt
+View all files
+Repository files navigation
+README
+Apache-2.0 license
+More
+items
+📥 Model Download
+|
+📄 Paper Link
+|
+📄 Arxiv Paper Link
+|
+DeepSeek-OCR 2: Visual Causal Flow
+Explore more human-like visual encoding.
+Contents
+Install
+vLLM Inference
+Transformers Inference
+Install
+Our environment is cuda11.8+torch2.6.0.
+Clone this repository and navigate to the DeepSeek-OCR-2 folder
+git clone https://github.com/deepseek-ai/DeepSeek-OCR-2.git
+Conda
+conda create -n deepseek-ocr2 python=3.12.9 -y
+conda activate deepseek-ocr2
+Packages
+download the vllm-0.8.5
+whl
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+pip install vllm-0.8.5+cu118-cp38-abi3-manylinux1_x86_64.whl
+pip install -r requirements.txt
+pip install flash-attn==2.7.3 --no-build-isolation
+Note:
+if you want vLLM and transformers codes to run in the same environment, you don't need to worry about this installation error like: vllm 0.8.5+cu118 requires transformers>=4.51.1
+vLLM-Inference
+VLLM:
+Note:
+change the INPUT_PATH/OUTPUT_PATH and other settings in the DeepSeek-OCR2-master/DeepSeek-OCR2-vllm/config.py
+cd
+DeepSeek-OCR2-master/DeepSeek-OCR2-vllm
+image: streaming output
+python run_dpsk_ocr2_image.py
+pdf: concurrency (on-par speed with DeepSeek-OCR)
+python run_dpsk_ocr2_pdf.py
+batch eval for benchmarks (i.e., OmniDocBench v1.5)
+python run_dpsk_ocr2_eval_batch.py
+Transformers-Inference
+Transformers
+from
+transformers
+import
+AutoModel
+,
+AutoTokenizer
+import
+torch
+import
+os
+os
+.
+environ
+[
+"CUDA_VISIBLE_DEVICES"
+]
+=
+'0'
+model_name
+=
+'deepseek-ai/DeepSeek-OCR-2'
+tokenizer
+=
+AutoTokenizer
+.
+from_pretrained
+(
+model_name
+,
+trust_remote_code
+=
+True
+)
+model
+=
+AutoModel
+.
+from_pretrained
+(
+model_name
+,
+_attn_implementation
+=
+'flash_attention_2'
+,
+trust_remote_code
+=
+True
+,
+use_safetensors
+=
+True
+)
+model
+=
+model
+.
+eval
+().
+cuda
+().
+to
+(
+torch
+.
+bfloat16
+)
+# prompt = "<image>\nFree OCR. "
+prompt
+=
+"<image>
+\n
+<|grounding|>Convert the document to markdown. "
+image_file
+=
+'your_image.jpg'
+output_path
+=
+'your/output/dir'
+res
+=
+model
+.
+infer
+(
+tokenizer
+,
+prompt
+=
+prompt
+,
+image_file
+=
+image_file
+,
+output_path
+=
+output_path
+,
+base_size
+=
+1024
+,
+image_size
+=
+768
+,
+crop_mode
+=
+True
+,
+save_results
+=
+True
+)
+or you can
+cd
+DeepSeek-OCR2-master/DeepSeek-OCR2-hf
+python run_dpsk_ocr2.py
+Support-Modes
+Dynamic resolution
+Default: (0-6)×768×768 + 1×1024×1024 — (0-6)×144 + 256 visual tokens ✅
+Main Prompts
+# document: <image>\n<|grounding|>Convert the document to markdown.
+# without layouts: <image>\nFree OCR.
+Acknowledgement
+We would like to thank
+DeepSeek-OCR
+,
+Vary
+,
+GOT-OCR2.0
+,
+MinerU
+,
+PaddleOCR
+for their valuable models.
+We also appreciate the benchmark
+OmniDocBench
+.
+Citation
+@article
+{
+wei2025deepseek
+,
+title
+=
+{
+DeepSeek-OCR: Contexts Optical Compression
+}
+,
+author
+=
+{
+Wei, Haoran and Sun, Yaofeng and Li, Yukun
+}
+,
+journal
+=
+{
+arXiv preprint arXiv:2510.18234
+}
+,
+year
+=
+{
+2025
+}
+}
+@article
+{
+wei2026deepseek
+,
+title
+=
+{
+DeepSeek-OCR 2: Visual Causal Flow
+}
+,
+author
+=
+{
+Wei, Haoran and Sun, Yaofeng and Li, Yukun
+}
+,
+journal
+=
+{
+arXiv preprint arXiv:2601.20552
+}
+,
+year
+=
+{
+2026
+}
+}
+About
+Visual Causal Flow
+Resources
+Readme
+Apache-2.0 license
+Activity
+Custom properties
+Stars
+3.5k
+stars
+Watchers
+22
+watching
+Forks
+311
+forks
+Report repository
+Releases
+Packages
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

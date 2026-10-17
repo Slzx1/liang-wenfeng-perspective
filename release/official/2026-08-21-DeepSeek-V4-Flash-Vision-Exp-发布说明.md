@@ -1,0 +1,89 @@
+# DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live
+
+- URL: https://api-docs.deepseek.com/news/news260821
+- 日期: 2026-08-21
+- 性质: 公司级发布说明，非梁文锋个人执笔
+- 抓取日期: 2026-10-17
+
+---
+
+DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live | DeepSeek API Docs
+Skip to main content
+DeepSeek API Docs
+Resources
+Integrations
+API Status
+FAQ
+English
+English
+中文（中国）
+DeepSeek Platform
+中
+Quick Start
+API Guides
+API Reference
+News
+Change Log
+DeepSeek-V4.1-Flash Release 2026/09/10
+DeepSeek-V4-Flash-Vision-Exp Release 2026/08/21
+DeepSeek-V4-Pro GA Release 2026/08/13
+DeepSeek-V4 Preview Release 2026/04/24
+DeepSeek-V3.2 Release 2025/12/01
+DeepSeek-V3.2-Exp Release 2025/09/29
+DeepSeek V3.1 Update 2025/09/22
+DeepSeek V3.1 Release 2025/08/21
+DeepSeek-R1-0528 Release 2025/05/28
+DeepSeek-V3-0324 Release 2025/03/25
+DeepSeek-R1 Release 2025/01/20
+DeepSeek APP 2025/01/15
+Introducing DeepSeek-V3 2024/12/26
+DeepSeek-V2.5-1210 Release 2024/12/10
+DeepSeek-R1-Lite Release 2024/11/20
+DeepSeek-V2.5 Release 2024/09/05
+Context Caching is Available 2024/08/02
+New API Features 2024/07/25
+DeepSeek-V4-Flash-Vision-Exp Release 2026/08/21
+On this page
+DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live
+DeepSeek-V4-Flash-Vision-Exp is now live on the DeepSeek API Platform! 🚀
+🔹 This experimental multimodal model matches DeepSeek-V4-Flash on text capabilities—including agents, reasoning, and world knowledge.
+🔹 On multimodal agent benchmarks, V4-Flash-Vision-Exp makes a major leap over V4-Flash, bringing multimodal agent performance close to Opus-4.8.
+Try it with
+model='deepseek-v4-flash-vision-exp'
+. DeepSeek Harness 0.1.1 was released today with out-of-the-box support for the new model.
+Multimodality unlocks more agent use cases 👀
+​
+V4-Flash-Vision-Exp works smoothly across agent frameworks, combining visual understanding with a wide range of tools to unlock more practical workflows.
+Multimodal API support 🔌
+​
+🔹 Set
+model='deepseek-v4-flash-vision-exp'
+🔹 Images are tokenized for billing: up to 384 tokens each, at V4-Flash pricing
+🔹 Supports Chat Completions, Messages & Responses
+🔹 Supports mixed text + image input; images can be provided via base64, external URLs, or the Files API
+Docs:
+API Guides - Vision
+Files API is now live 📁
+​
+🔹 Free to use
+🔹 Upload an image once, then reference it by
+file_id
+to save request bandwidth
+🔹 Reuse the same image across requests—no need to upload it again
+Learn more:
+API Guides - Files API
+Previous
+DeepSeek-V4.1-Flash: Smarter, Faster, More Efficient
+Next
+DeepSeek-V4-Pro GA Release
+Multimodality unlocks more agent use cases 👀
+Multimodal API support 🔌
+Files API is now live 📁
+WeChat Official Account
+Community
+Email
+Discord
+Twitter
+More
+GitHub
+Copyright © 2026 DeepSeek, Inc.

@@ -1,0 +1,20 @@
+DeepSeek | DeepSeek APP 正式上线
+获取 APP
+扫码下载 DeepSeek App
+中文
+EN
+中文
+EN
+产品
+2025 年 1 月 15 日
+DeepSeek APP 正式上线
+相关阅读
+DeepSeek-V3 正式发布
+DeepSeek-V3 全新系列模型上线并同步开源，671B MoE 参数，生成速度提升至 3 倍，多项评测成绩比肩 GPT-4o 和 Claude-3.5-Sonnet。
+阅读更多
+DeepSeek-R1 发布，性能对标 OpenAI o1 正式版
+DeepSeek-R1 正式发布并开源，性能比肩 OpenAI o1 正式版，采用 MIT License，支持蒸馏和商用。
+阅读更多
+DeepSeek-V3 模型更新，各项能力全面进阶
+DeepSeek-V3-0324 版本发布，推理任务表现大幅提高，前端开发能力增强，中文写作与搜索能力全面升级。
+阅读更多

@@ -1,0 +1,88 @@
+幻方 | 技术博客
+首页
+技术博客
+量化基金
+幻方历程
+加入我们
+社会责任
+中文
+/
+EN
+首页
+技术博客
+量化基金
+幻方历程
+加入我们
+社会责任
+中文
+/
+EN
+中文
+/
+EN
+最新发布
+FlashAttention：具有 IO 感知，快速且内存高效的新型注意力算法
+FlashAttention 拥有比 PyTorch 标准注意力快 2~4 倍的运行速度，所需内存还减少了 5~20 倍。
+October 19, 2023
+author:
+Vachel
+分类
+ALL
+基础研究
+萤火平台
+萤火跑模型
+hfai 心法
+基础设施
+并行优化
+StreamingLLM：一种能够接受近乎无限长度文本的大模型框架
+LLM 最新推理技术，理论可以实现无限长的生成能力。
+October 12, 2023
+author:
+Vachel
+Continuous Batching：一种提升 LLM 部署吞吐量的利器
+连续批处理可以实现23倍的 LLM 推理吞吐量，同时降低延迟（P50）。
+September 10, 2023
+author:
+Vachel
+LLaMA-2 技术详解（一）：数据打标
+LLama-2-Chat 几乎是现有开源模型中唯一做了 RLHF 的模型，其数据标注具体是如何做的呢？
+August 10, 2023
+author:
+Freja/Vachel
+深入浅出 GPT-4 的体系结构
+GPT-4 相比前代 GPT-3.5/ChatGPT 有何不同？
+July 27, 2023
+author:
+Vachel/小杞
+CC_Cleaner：一种丝滑高效且易扩展的数据清洗流程
+本文将为大家介绍幻方&基础研究实践优化后的数据清洗流程。
+July 06, 2023
+author:
+WT/XT/MC
+HAI-LLM：高效且轻量的大模型训练工具
+HAI-LLM 是幻方 AI 研发的高效简洁的大模型训练工具，能更好地发挥 GPU 集群的计算能力。
+June 27, 2023
+author:
+High-flyer
+< 上一页
+1
+2
+3
+4
+5
+6
+7
+8
+9
+下一页 >
+联系幻方
+地址
+杭州市拱墅区环城北路 169 号 汇金国际大厦 A 座 14 层
+上海市浦东新区花园石桥路 66 号 东亚银行金融大厦 45 层
+电话
++86-0571-86656960
+邮箱
+info@high-flyer.cn
+浙ICP备15029780号-1
+浙公网安备 33010302003447
+©幻方量化版权所有

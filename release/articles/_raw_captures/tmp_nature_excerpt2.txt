@@ -1,0 +1,8 @@
+== 294
+== GPU hours
+== H800 GPU
+== 2 per GPU
+== training cost
+with human preferences, we implement a secondary RL stage designed to enhance the helpfulness and harmlessness of the model while simultaneously refining its reasoning capabilities. The reward model is described in  Methods  section ‘Reward design’ and RL hyperparameters are in  Methods  section ‘Training details of the second RL stage’. The total training cost is listed in Supplementary Information, section  2.4.4 . Fig. 2: The multistage pipeline of DeepSeek-R1. Full size image A detailed background on DeepSeek-V3 Base and DeepSeek-V3 is provided in Supplementary Information, section  1.1 . The models DeepSeek-R1 Dev1, Dev2 and Dev3 represent intermediate checkpoints in this pipeline. We evaluate our models on MMLU 11 , MMLU-Redux 12 , MMLU-Pro 13 , DROP 14 , C-Eval 15 , IFEval 16 , FRAM
+---
+== distillation

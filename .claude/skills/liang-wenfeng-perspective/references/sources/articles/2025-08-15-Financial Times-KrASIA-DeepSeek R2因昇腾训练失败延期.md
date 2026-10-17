@@ -1,0 +1,88 @@
+# DeepSeek R2因昇腾训练失败延期
+
+- URL: https://kr-asia.com/pulses/156596
+- 抓取日期: 2026-10-17
+- 来源: Financial Times/KrASIA
+- 证据级别: 二手（媒体引述）
+- 说明: R2尝试昇腾训练失败，改用英伟达训练，昇腾仅用于推理。
+
+---
+
+DeepSeek delays R2 launch over chip woes
+China’s AI talent race sends pay soaring, even for interns
+After years of losses, Nio finally turns profitable
+Deals in brief: NEU Battery Materials raises USD 7.6 million, OneByZero secures Series A funding, 12 China investments, and more
+Aug
+15
+2025
+DeepSeek delays R2 launch over chip woes
+
+just now
+Financial Times
+DeepSeek
+ has reportedly delayed its R2 model launch after unsuccessful training runs on 
+Huawei’s
+ Ascend chips, opting to use 
+Nvidia
+ hardware while continuing to use Ascend for inference. The delay highlighted China’s chip performance gap with US rivals, slowed market momentum, and was compounded by extended data labelling.
+Share
+Sep
+23
+Hailiang refiles for Hong Kong IPO
+
+just now
+Jiemian News
+Hailiang has filed again for a Hong Kong IPO as it expands into lithium battery copper foil and AI-related copper materials. H1 2026 net profit fell 9.96% YoY to RMB 641 million, while operating cash flow recorded a net outflow of RMB 7.28 billion.
+Tencent Cloud launches DataBuddy
+
+just now
+Tencent Cloud
+Tencent Cloud has launched DataBuddy, an agent-native platform for data engineering, governance, analytics, and data science. The service combines data infrastructure with AI agents and is available in markets including China, Thailand, South Korea, and Indonesia, with further international expansion planned.
+CATL starts trial production in Hungary
+
+just now
+DoNews
+Contemporary Amperex Technology (CATL) began trial production at its new battery cell plant in Debrecen, Hungary, on September 22. The first two production lines are being tested and optimized ahead of full-scale manufacturing. Once fully completed, the site is planned to have 100 GWh of annual capacity, making it CATL’s largest production base outside China.
+CXMT begins mass production of fifth-gen DRAM
+
+just now
+TMTPost
+ChangXin Memory Technologies (CXMT) announced mass production of its fifth-generation DRAM technology platform on September 20. The company said the new process increases die output per wafer by at least 50% compared with the previous generation. LPDDR5X products based on the platform are aimed at mid- to high-end smartphones and other mobile devices.
+Ant Group forms new Alipay business group
+
+just now
+IT Zhijia
+Ant Group has merged its Alipay, digital payments, and Zhima Credit operations into a new Alipay business group. Wu Minzhi will lead the unit while continuing to serve as chief people officer. The restructuring is intended to strengthen merchant services and accelerate Ant’s push into AI-driven commerce.
+Unitree launches Dex5-S robotic hand
+
+just now
+IT Zhijia
+Unitree Robotics launched the Dex5-S robotic hand on September 21. The human-scale device has 22 degrees of freedom, weighs about 620 grams, and supports a maximum load of two kilograms. Prices start at RMB 39,900, while the Pro version adds tactile sensing.
+IM Motors opens LS6 presales
+
+just now
+21st Century Business Herald
+IM Motors opened presales for its new LS6 SUV, starting at RMB 209,900, ahead of an official launch on September 23. The vehicle features a steer-by-wire chassis, Neo electric architecture, and a Level 2 driver assistance system powered by technology derived from an Level 4-capable model architecture.
+CATL spends RMB 1.6 billion on buybacks
+
+just now
+Jiemian News
+Contemporary Amperex Technology (CATL) completed three share buybacks in September, spending about RMB 1.6 billion in total. The company announced a RMB 20–40 billion repurchase plan in July, with the shares to be canceled to reduce total share capital.
+Huawei sets September 28 HIMA launch event
+
+just now
+36Kr
+Huawei will hold a product launch event on September 28 for the Luxeed R7 and other Harmony Intelligent Mobility Alliance products. Preorders for Stelato’s flagship V8 MPV are also expected to open at the event.
+GAC Group opens Cambodia assembly plant
+
+just now
+Jiemian News
+GAC Group opened a knocked-down assembly plant in Kampong Chhnang, Cambodia, on September 17 through a partnership with TH Group. The facility has planned annual capacity of 10,000 vehicles and will assemble models including the Empow, Emkoo, GS8, and GN8.
+See All
+News
+China to crack down on EV innovations after safety concerns flare
+News
+Tmall expects record one million brands for Singles’ Day
+Events
+Dubai-China business forum yields new partnerships amid focus on AI cooperation
+See All

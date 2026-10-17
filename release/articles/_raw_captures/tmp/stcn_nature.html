@@ -1,0 +1,726 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400,  user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+        <meta name="keywords" content="DeepSeek,Nature,大模型,强化学习,同行评审,开源模型,AI技术,国产芯片,FP8参数精度,人工智能,AI,证券时报">
+            <meta name="description" content="证券时报，证券时报网，由人民日报社主管主办，是证券市场权威信息披露媒体，也是中国资本市场的重要信息披露平台。提供全天候7*24小时财经证券类资讯，内容丰富，包括时报快讯、股市新闻、财经资讯、基金净值、债券、期货、上市公司公告等，为用户提供全方位、最新鲜的财经信息。打造了"信披168"综合服务专区，资本市场投教"星火计划"，是权威、全面的资本市场服务平台。">
+                    <title>DeepSeek，打破历史！中国AI的“Nature时刻”</title>
+        <link rel='icon' href='https://static-web.stcn.com/static/images/favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/common.min.css?v=2026061801">
+            <link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/top-nav.min.css?v=20260625">
+                <link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/list.min.css">
+<link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/detail.min.css?v=20260706">
+                <style>
+    body .detail-content{
+        word-break: break-word !important;
+    }
+</style>
+<script>
+    var mobile_detail_jump_type = 'reported_info';
+</script>
+        <script src="https://static-web.stcn.com/static/v3/scripts/tailwindcss-3.4.17.min.js"></script>
+    <script>
+                window.IS_LOGIN = false;
+                var DOMAIN_CONFIG = {
+            pc: "https://www.stcn.com",
+            h5: "https://h5.stcn.com",
+            epaper: "https://epaper.stcn.com"
+        };
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#c7000b",
+                        primaryDark: "#960009",
+                        primaryLight: "#fbe9ea",
+                        accent: "#ff9900",
+                        mainText: "#1E2534",
+                    },
+                },
+            },
+            plugins: [
+                function ({ addComponents }) {
+                    addComponents({
+                        ".w-common": {
+                            width: "100%",
+                            maxWidth: "1400px",
+                        },
+                    });
+                },
+            ],
+        };
+    </script>
+    </head>
+<body class="" >
+
+<!-- 顶部导航栏 -->
+<div class="v3-top-nav nav clearfix" data-toggle="true">
+    <!-- 移动端顶部切换栏 -->
+    <div id="mobile-version-toggle"
+         class="hidden relative pt-[20px] w-full h-[760px] bg-white z-[9999] items-center justify-center space-x-[80px]">
+        <div
+            class="absolute top-0 left-0 w-full h-[100%] from-[#ffdbdc] to-transparent opacity-80 pointer-events-none">
+        </div>
+        <a href="javascript:;"
+           class="relative z-10 w-[340px] h-[90px] flex items-center justify-center rounded-full text-[46px] bg-[#fbe9ea] text-[#c7000b] tracking-widest font-medium">
+            移动版
+        </a>
+        <a href="javascript:void(0)"
+           class="relative z-10 w-[340px] h-[90px] flex items-center justify-center rounded-full text-[46px] bg-[#c7000b] text-white tracking-widest font-medium">
+            网页版
+        </a>
+    </div>
+    <div class="v3-top-nav-inner w1300">
+        <div class="l logos">
+            <a href="/" class="logo-url">
+                <img class="zqsb-logo" src="https://static-web.stcn.com/static/images/zqsb.png" alt="" />
+            </a>
+            <span></span>
+            <a href="/" class="logo-url">
+                <img class="stcn-logo" src="https://static-web.stcn.com/static/images/stcn.png" alt="" />
+            </a>
+        </div>
+        <div class="l lt">
+            <ul class="nav-list no-border clearfix">
+                                    <li class="">
+                                                    <a href="/" target="_blank">
+                                首页                            </a>
+                                            </li>
+                                    <li class="">
+                                                    <a href="/article/list/kx.html" target="_blank">
+                                快讯                            </a>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/article/list/xw.html" target="_blank"
+                               >
+                                新闻                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/article/list/yw.html" target="_blank">
+                                            要闻                                        </a>
+                                                                            <a class="" href="/article/list/finance.html" target="_blank">
+                                            金融                                        </a>
+                                                                            <a class="" href="/article/list/comment.html" target="_blank">
+                                            评论                                        </a>
+                                                                            <a class="" href="/article/list/cj.html" target="_blank">
+                                            产经                                        </a>
+                                                                            <a class="" href="/chuangtou/index.html" target="_blank">
+                                            创投                                        </a>
+                                                                            <a class="" href="/article/list/gd.html" target="_blank">
+                                            滚动                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/live/media.html" target="_blank"
+                               >
+                                视频                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/live/video.html" target="_blank">
+                                            视频                                        </a>
+                                                                            <a class="" href="/live/list.html" target="_blank">
+                                            直播                                        </a>
+                                                                            <a class="" href="https://rs.stcn.com/" target="_blank">
+                                            路演                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/article/list/investment.html" target="_blank"
+                               >
+                                投资                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/article/list/a_stock.html" target="_blank">
+                                            A股                                        </a>
+                                                                            <a class="" href="/article/list/company.html" target="_blank">
+                                            公司                                        </a>
+                                                                            <a class="" href="/article/xg.html" target="_blank">
+                                            新股                                        </a>
+                                                                            <a class="" href="/article/list/fund.html" target="_blank">
+                                            基金                                        </a>
+                                                                            <a class="" href="/article/gmg.html" target="_blank">
+                                            港美股                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/article/data.html" target="_blank"
+                               >
+                                数据                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/article/list/djsj.html" target="_blank">
+                                            数据资讯                                        </a>
+                                                                            <a class="" href="/article/list/dpm.html" target="_blank">
+                                            盯盘面                                        </a>
+                                                                            <a class="" href="/article/list/kzj.html" target="_blank">
+                                            看资金                                        </a>
+                                                                            <a class="" href="/article/list/zfx.html" target="_blank">
+                                            追风向                                        </a>
+                                                                            <a class="" href="/article/list/jcb.html" target="_blank">
+                                            解财报                                        </a>
+                                                                            <a class="" href="/article/list/txg.html" target="_blank">
+                                            淘新股                                        </a>
+                                                                            <a class="" href="/article/list/zrz.html" target="_blank">
+                                            再融资                                        </a>
+                                                                            <a class="" href="/article/list/data_hk.html" target="_blank">
+                                            港股                                        </a>
+                                                                            <a class="" href="/article/list/data_fund.html" target="_blank">
+                                            基金                                        </a>
+                                                                            <a class="" href="/article/list/sj_kcb.html" target="_blank">
+                                            科创板                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/xinpi/index.html" target="_blank"
+                               >
+                                信披+                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/xinpi/report.html" target="_blank">
+                                            全部                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=sse" target="_blank">
+                                            沪市主板                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=szse" target="_blank">
+                                            深市主板                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=kcb" target="_blank">
+                                            科创板                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=cyb" target="_blank">
+                                            创业板                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=bse" target="_blank">
+                                            北交所                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=xsb" target="_blank">
+                                            新三板                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=sgt" target="_blank">
+                                            深股通                                        </a>
+                                                                            <a class="" href="/xinpi/list.html?type=hgt" target="_blank">
+                                            沪股通                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a href="/article/list/zt.html" target="_blank">
+                                专题                            </a>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/article/list/area.html?subType=%E7%B2%A4" target="_blank"
+                                                                  data-type="province"
+                               >
+                                地方                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="province">
+                                                                            <a class="" href="/article/list/area.html?subType=京" target="_blank">
+                                            京                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=津" target="_blank">
+                                            津                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=冀" target="_blank">
+                                            冀                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=晋" target="_blank">
+                                            晋                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=蒙" target="_blank">
+                                            蒙                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=辽" target="_blank">
+                                            辽                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=吉" target="_blank">
+                                            吉                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=黑" target="_blank">
+                                            黑                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=沪" target="_blank">
+                                            沪                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=苏" target="_blank">
+                                            苏                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=浙" target="_blank">
+                                            浙                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=皖" target="_blank">
+                                            皖                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=闽" target="_blank">
+                                            闽                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=赣" target="_blank">
+                                            赣                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=鲁" target="_blank">
+                                            鲁                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=豫" target="_blank">
+                                            豫                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=鄂" target="_blank">
+                                            鄂                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=湘" target="_blank">
+                                            湘                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=粤" target="_blank">
+                                            粤                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=桂" target="_blank">
+                                            桂                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=琼" target="_blank">
+                                            琼                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=渝" target="_blank">
+                                            渝                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=川" target="_blank">
+                                            川                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=黔" target="_blank">
+                                            黔                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=滇" target="_blank">
+                                            滇                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=藏" target="_blank">
+                                            藏                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=陕" target="_blank">
+                                            陕                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=甘" target="_blank">
+                                            甘                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=青" target="_blank">
+                                            青                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=宁" target="_blank">
+                                            宁                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=新" target="_blank">
+                                            新                                        </a>
+                                                                            <a class="" href="/article/list/area.html?subType=鹏" target="_blank">
+                                            鹏                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                                    <li class="">
+                                                    <a class="drop" href="/article/service.html" target="_blank"
+                               >
+                                服务                            </a>
+                            <div class="v3-top-nav-drop-layer">
+                                <div class="">
+                                                                            <a class="" href="/article/cq.html" target="_blank">
+                                            人民鉴真                                        </a>
+                                                                            <a class="" href="/service/ir.html" target="_blank">
+                                            投关服务                                        </a>
+                                                                            <a class="" href="/edu/index.html" target="_blank">
+                                            投教服务                                        </a>
+                                                                            <a class="" href="/article/service.html#qtfw" target="_blank">
+                                            其他服务                                        </a>
+                                                                    </div>
+                            </div>
+                                            </li>
+                            </ul>
+        </div>
+        <div class="v3-top-nav-right">
+            <form action="/article/search.html" target="_blank" class="nav-search-form">
+                <input name="keyword" placeholder="代码或简称" />
+                <button class="nav-search-form-submit-btn"></button>
+            </form>
+            <div class="v3-top-nav-avatar">
+                <a>
+                    公众号
+                    <div><img src="https://static-web.stcn.com/static/images/qr.png" alt="" /></div>
+                </a>
+                <i></i>
+                <a href="https://epaper.stcn.com/" target="_blank">
+                    电子报
+                </a>
+                <i></i>
+                <a href="/public/download.html" target="_blank">
+                    客户端
+                </a>
+                <i></i>
+                <div class="drop-layer-wrapper">
+                                            <a login-btn><img src="https://static-web.stcn.com/static/images/default-avatar.png" alt=""></a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pt-77 w1300 m-auto">
+    <div class="v3-top-nav-seat"></div>
+    
+    <!-- 面包屑导航 -->
+            <div class="breadcrumb">
+    您当前的位置：<a href="/">证券时报</a> > <a href="/article/list/company.html">公司</a> > <a href="javascript:;">正文</a>
+</div>
+        
+    
+<div class="clearfix">
+    <div class="column-863 l">
+        
+
+<!--调用首页热榜-->
+
+
+
+
+<div class="detail-title">
+    DeepSeek，打破历史！中国AI的“Nature时刻”</div>
+<div class="detail-info">
+    <span>来源：证券时报网</span><span>作者：周春媚</span><span>2025-09-18 12:52</span>
+    <div class="r font-adjust">
+        <span>字号</span>
+        <svg
+            class="w-[9px] h-[5px]"
+            viewBox="0 0 9 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M1 1L4.5 4L8 1"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            ></path>
+        </svg>
+        <div class="dropmenu">
+            <div data-size="22">超大</div>
+            <div data-size="20">大</div>
+            <div data-size="18">标准</div>
+            <div data-size="16">小</div>
+        </div>
+    </div>
+</div>
+
+<div class="detail-content-wrapper">
+    <div class="social-bar">
+      <div class="tt">点赞</div>
+      <div class="like like-btn " data-id="3345648" data-url="/operation/like.html"></div>
+      <div class="fav post-btn " data-id="3345648" data-url="/operation/collect.html" ></div>
+      <a class="comment" href="#comment"></a>
+      <div class="tt">分享</div>
+      <div class="share-popup social-share"
+           data-initialized="true"
+           data-title="DeepSeek，打破历史！中国AI的“Nature时刻”"
+           data-description="DeepSeek，打破历史！中国AI的“Nature时刻”"
+           data-image="https://static-web.stcn.com/upload/wechat/20250918/68cb8fb58639d.png"
+           data-url="https://h5.stcn.com/pages/detail/detail?id=3345648&amp;jump_type=reported_info"
+      >
+        <a class="social-share-icon icon-wechat wx"></a>
+        <a class="social-share-icon icon-qzone qq"></a>
+        <a class="social-share-icon icon-weibo wb"></a>
+      </div>
+          </div>
+    <div class="detail-content">
+                        <script src="https://static-web.stcn.com/static/scripts/echarts.min.js"></script><p>中国大模型，首登Nature封面。</p><p>9月17日，在最新一期的国际权威期刊Nature（自然）中，DeepSeek-R1推理模型研究论文登上了封面。该论文由DeepSeek团队共同完成，梁文锋担任通讯作者，首次公开了仅靠强化学习就能激发大模型推理能力的重要研究成果。这是中国大模型研究首次登上Nature封面，也是全球首个经过完整同行评审并发表于权威期刊的主流大语言模型研究，标志着中国AI技术在国际科学界获得最高认可。</p><p>Nature在其社论中评价道：“几乎所有主流的大模型都还没有经过独立同行评审，这一空白终于被DeepSeek打破。”</p><p><strong>中国AI大模型的“Nature时刻”</strong></p><p>自大模型浪潮席卷全球以来，技术发布、性能榜单层出不穷，但始终缺乏一个权威的“科学认证”机制。OpenAI、谷歌等巨头虽屡有突破，但其核心技术多以技术报告形式发布，未经独立同行评审。</p><p>DeepSeek以其公开性和透明性打破了这一局面。DeepSeek-R1模型的研究论文最早于今年年初发布在预印本平台arXiv上。自今年2月14日向Nature投递论文至今，历经半年，8位外部专家参与了同行评审，DeepSeek-R1推理模型研究论文终获发表，完成了从预印本到Nature封面的“学术跃迁”。审稿人不仅关注模型性能，更对数据来源、训练方法、安全性等提出严格质询，这一过程是AI模型迈向更高的透明度和可重复性的可喜一步。</p><p>因此，Nature也对DeepSeek的开放模式给予高度评价，在其社论中评价道：“几乎所有主流的大模型都还没有经过独立同行评审，这一空白终于被DeepSeek打破。”全球知名开源社区Hugging Face机器学习工程师Lewis Tunstall也是DeepSeek论文的审稿人之一，他强调：“这是一个备受欢迎的先例。如果缺乏这种公开分享大部分研发过程的行业规范，我们将很难评估这些系统的潜在风险。”</p><p>据了解，DeepSeek本次在Nature上发表的论文较今年年初的初版论文有较大的改动，全文64页，不仅首次披露了R1的训练成本，而且透露了更多模型训练的技术细节，包括对发布初期外界有关“蒸馏”方法的质疑作出了正面回应，提供了训练过程中减轻数据污染的详细流程，并对R1的安全性进行了全面评估。</p><p>其中，在训练成本方面，R1-Zero和R1都使用了512张H800GPU，分别训练了198个小时和80个小时，以H800每GPU小时2美元的租赁价格换算，R1的总训练成本为29.4万美元（约合人民币209万元）。不到30万美元的训练成本，与其他推理模型动辄上千万美元的花费相比，可谓实现了极大的降本。</p><p>关于R1发布最初时所受到的“蒸馏”质疑，DeepSeek介绍，其使用的数据全部来自互联网，虽然可能包含GPT-4生成的结果，但并非有意而为之，更没有专门的蒸馏环节。所谓“蒸馏”，简单理解就是用预先训练好的复杂模型输出的结果，作为监督信号再去训练另外一个模型。R1发布时，OpenAI称它发现DeepSeek使用了OpenAI专有模型来训练自己的开源模型的证据，但拒绝进一步透露其证据的细节。</p><p><strong>R2何时问世引发关注</strong></p><p>自今年年初发布R1以来，DeepSeek在全球树立了开源模型的典范，但过去数月，外界对于R2何时发布始终保持高度关注，相关传言一直不断。不过，R2的发布时间一再推迟，外界分析R2研发进程缓慢可能与算力受限有关。</p><p>值得注意的是，今年8月21日，DeepSeek正式发布DeepSeek-V3.1，称其为“迈向Agent（智能体）时代的第一步”。据DeepSeek介绍，V3.1主要包含三大变化：一是采用混合推理架构，一个模型同时支持思考模式与非思考模式；二是具有更高的思考效率，能在更短时间内给出答案；三是具有更强的智能体能力，通过后训练优化，新模型在工具使用与智能体任务中的表现有较大提升。</p><p>由于R1的基座模型为V3，V3.1的升级也引发了外界对于R2“在路上”的猜测。V3.1的升级更深刻的意义在于，DeepSeek强调DeepSeek-V3.1使用了UE8M0 FP8 Scale的参数精度，而UE8M0 FP8是针对即将发布的下一代国产芯片设计。这也表明未来基于DeepSeek模型的训练与推理有望更多应用国产AI芯片，助力国产算力生态加速建设。这一表态一度带动国产芯片算力股股价飙升。</p><p>中国银河证券研报指出，DeepSeek从V3版本就开始采用FP8参数精度验证了其训练的有效性，通过降低算力精度，使国产ASIC芯片能在成熟制程（12-28nm）上接近先进制程英伟达GPU的算力精度，DeepSeek-V3.1使用UE8M0 FP8 Scale参数精度，让软件去主动拥抱硬件更喜欢的数据格式，“软硬协同”的生态技术壁垒逐渐成为AI浪潮下新范式，未来国产大模型将更多拥抱FP8算力精度并有望成为一种新技术趋势，通过软硬件的协同换取数量级性能的提升，国产算力芯片将迎来变革。</p><p>校对：王朝全</p>            </div>
+          <div class="detail-content-editor">责任编辑： 冉超</div>
+            <div class="detail-content-tags">
+        <!--普通文章标签：A股(tag_subtype=A_code)跳个股详情页，普通标签跳搜索页带标签值-->
+                        <div class=""><a href="/article/search.html?keyword=DeepSeek" target="_blank" title="DeepSeek">DeepSeek</a></div>
+                <div class=""><a href="/article/search.html?keyword=Nature" target="_blank" title="Nature">Nature</a></div>
+                <div class=""><a href="/article/search.html?keyword=%E5%A4%A7%E6%A8%A1%E5%9E%8B" target="_blank" title="大模型">大模型</a></div>
+                    </div>
+    <div class="stock-tags">
+                      </div>
+        <div class="detail-content-statement">
+        <div>声明：证券时报力求信息真实、准确，文章提及内容仅供参考，不构成实质性投资建议，据此操作风险自担</div>
+        <div>下载"证券时报"官方APP，或关注官方微信公众号，即可随时了解股市动态，洞察政策信息，把握财富机会。</div>
+    </div>
+        
+    
+    <div class="comment" id="comment">
+        <div class="bbox">
+            <div class="box-title">
+                <div class="box-title-icon">用户评论</div>
+            </div>
+            <div class="box-content">
+                <div class="comment-input">
+                                        <div class="ds-tip"><span login-btn>登录</span>后可以发言</div>
+                    <textarea name="content" placeholder="请输入内容" class="hidden"></textarea>
+                                    </div>
+                <div class="comment-input-bottom">
+                    <div class="comment-tip">网友评论仅供其表达个人看法，并不表明证券时报立场</div>
+                    <div class="commnet-send-btn send-comment-btn" data-url="/operation/submit-comment.html?table=news&id=3345648" data-id="3345648">发表评论</div>
+                </div>
+                <div class="comment-list">
+                                        <div class="empty comment text-center" style="display: block">
+                      暂无评论
+                    </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="list-page-aside column-350 ml-87 r">
+                            <div class="box need-fixed">
+    <div class="box-title">
+        <div class="box-title-icon-text">时报<span>热榜</span></div>
+        <span
+            class="refresh-btn"
+            data-refresh="refresh-list"
+            data-target-list="aside-hot-list"
+            data-refresh-url="/article/index-hot-list.html"
+        >换一换</span
+        >
+    </div>
+    <div class="box-content">
+        <ul class="stcn-hot-list" id="aside-hot-list"></ul>
+    </div>
+</div>                <a href="/public/download.html" class="add" target="_blank">
+  <img src="https://static-web.stcn.com/static/images/aside-app-download.png?x-oss-process=image/resize,m_fill,h_324,w_350" alt="">
+</a>
+        <div class="box">
+  <div class="box-title">
+    <div class="box-title-icon-text">
+      热点<span>视频</span>
+    </div>
+    <span class="refresh-btn" data-refresh="video-hot-list" data-target-list="hot-video-list" data-refresh-url="/article/category-video-rank.html">换一换</span>
+  </div>
+  <div class="box-content">
+    <ul class="aside-hot-video-list" id="hot-video-list">
+    </ul>
+  </div>
+</div>    </div>
+</div>
+
+</div>
+
+<div class="fixed-tool">
+    <a href="/" class="go-home"  target="_blank"></a>
+    <div class="go-top"></div>
+    <a href="/public/download.html" class="go-download" target="_blank"></a>
+</div>
+<div class="footer-copyright mt-92">
+    <div>
+    <div><a href="/public/about-us.html" target="_blank">关于我们</a><span>|</span><a href="/public/service.html" target="_blank">服务条例</a><span>|</span><a href="/public/contact.html" target="_blank">联系我们</a><span>|</span><a href="/public/copyright.html" target="_blank">版权声明</a><span>|</span><a href="/public/site-map.html" target="_blank">网站地图</a><span>|</span><a href="/public/clue.html" data-is-login="false" target="_blank" class="index-jump-clue">线索提交</a></div>
+    <div>备案号：<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">粤ICP备09109218号</a><span>|</span><a href="/public/license_2.html" target="_blank">增值电信业务经营许可证：粤B2-20080118</a><span>|</span><a href="/public/license_1.html" target="_blank">互联网新闻信息服务许可证10120170066</a><span>|</span><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002008846" target="_blank">粤公网安备44030002008846号</a></div>
+<!--    <div><a href="/public/license_3.html" target="_blank">广播电视节目制作经营许可证：（粤）字第01703号</a><span>|</span><a href="/public/license_4.html" target="_blank">信息网络传播视听节目许可证1908317</a></div>-->
+    <div>违法和不良信息举报电话：0755-83514034 邮箱：<a href="mailto:0">bwb@stcn.com</a> <img src="https://static-web.stcn.com/static/images/wxb-icon.png" width="19" height="17" alt=""><a href="https://www.12377.cn/" target="_blank">中央网信办违法和不良信息举报中心</a><span login-btn>|</span><a href="/user-center/tip-off.html" data-is-login="false"  class="index-jump-report">证券时报网举报中心</a></div>
+    <div>本网站提供之资料或信息，仅供投资者参考，不构成投资建议。</div>
+    <div>深圳证券时报社有限公司版权所有，未经书面授权禁止转载及各种形式的软件开发。</div>
+    <div>Copyright © 2008-2026 Shenzhen Securities Times Co., Ltd. All Rights Reserved</div>
+</div></div>
+<link rel="stylesheet" href="https://static-web.stcn.com/static/styles/login.css?v=20260330">
+<script type="text/html" class="pop-window-login">
+    <div class="pop-window login-pop-window">
+        <div class="close"></div>
+        <div class="pwd-form-wrapper">
+            <div class="pop-window-title">
+                <img src="https://static-web.stcn.com/static/images/login-logo.png" alt="">
+            </div>
+            <div class="pop-window-body pwd-login-form">
+                <div class="switch-login-type-tab">
+                    <span class="active">密码登录</span>
+                    <span>验证码登录</span>
+                </div>
+                <div class="pop-window-form">
+                    <div class="different-form">
+                        <form data-ali-captch="true" action="/public/login.html" class="pop-window-login-pwd-form">
+                            <input name="phone" type="number" placeholder="请输入手机号码">
+                            <div class="pwd-input">
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                                <div class="forget-pwd-btn">忘记密码</div>
+                            </div>
+                            <div class=verify-image-code-input>
+                                <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                                <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                            </div>
+                            <button class="sub-btn">登录</button>
+                            <div class="sub-btn-tip">
+                              <input type="checkbox" checked="checked" name="privacyChecked" value="1"/>
+                              未注册手机验证后自动登录，注册即代表同意<a href="/public/agreement.html" target="_blank">《用户协议》</a>、<a href="/public/privacy.html" target="_blank">《隐私保护指引》</a>
+                            </div>
+                        </form>
+                        <form data-ali-captch="false" action="/public/login.html" class="pop-window-login-phone-form">
+                            <input name="phone" type="number" placeholder="请输入手机号码" class="login-phone-code-in">
+                            <div class="phone-code-input">
+                                <input name="phoneVerifyCode" placeholder="请输入验证码">
+                                <button type="button" data-ali-captch="true" class="login-send-phone-code-btn send-phone-code-btn" data-url="/public/send-code.html">发送验证码</button>
+                            </div>
+                            <div class=verify-image-code-input>
+                                <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                                <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                            </div>
+                            <button class="sub-btn">登录</button>
+                            <div class="sub-btn-tip">
+                              <input type="checkbox" checked="checked" name="privacyChecked" value="1"/>
+                              未注册手机验证后自动登录，注册即代表同意<a href="/public/agreement.html" target="_blank">《用户协议》</a>、<a href="/public/privacy.html" target="_blank">《隐私保护指引》</a></div>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="third-account text-center">
+                    <div class="tt"><span>第三方账户登录</span></div>
+                    <a href="javascript:;" class="wb"></a>
+                    <a href="javascript:;" class="qq"></a>
+                    <a href="javascript:;" class="wx"></a>
+                </div>-->
+            </div>
+            <div class="pop-window-body pwd-forget-form" style="display: none">
+                <div class="switch-login-type-tab">
+                    <span class="active">忘记密码</span>
+                </div>
+                <div class="pop-window-form">
+                    <form data-no-privacy-validate="true" data-ali-captch="false" action="/public/reset-pwd.html" class="pop-window-login-phone-form">
+                        <input name="phone" type="number" placeholder="请输入手机号码" class="forget-phone-code-in">
+                        <div class="phone-code-input">
+                            <input name="phoneVerifyCode" placeholder="请输入验证码">
+                            <button data-ali-captch="true" type="button" class="forget-send-phone-code-btn send-phone-code-btn" data-url="/public/send-code.html">发送验证码</button>
+                        </div>
+                        <div class=verify-image-code-input>
+                            <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                            <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                        </div>
+                        <input name="password" type="password" placeholder="请设置密码">
+                        <button class="sub-btn">确定</button>
+                        <div class="sub-btn-tip text-center pwd-form-back-text">返回登录</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wx-login-wrapper" style="display: none">
+            <div class="wx-qr">
+                <div class="text-center">
+                    <img src="https://static-web.stcn.com/static/images/wx-login-logo.png" alt="" class="wx-login-logo">
+                </div>
+                <div class="tt">
+                    <span>使用微信扫一扫登录</span>
+                </div>
+                <div class="text-center qr">
+                    <img src="https://static-web.stcn.com/static/images/qr.png" alt="">
+                </div>
+                <div class="text-center qr-text">证券时报官网</div>
+                <div class="back-text text-center">返回</div>
+            </div>
+        </div>
+    </div>
+</script><div id="captcha-element"></div>
+<div style="display: none">
+    <button id="ali-captcha-verifycode-btn" data-url="/public/captcha-verify.html"></button>
+</div>
+    <script src="https://static-web.stcn.com/static/scripts/api.js?v=20260817"></script>
+<script src="https://static-web.stcn.com/static/scripts/jquery.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/jquery-migrate.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/jsencrypt.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/lodash.min.js?v=20260318"></script>
+<script src="https://static-web.stcn.com/static/scripts/layer/layer.js"></script>
+<script src="https://static-web.stcn.com/static/v3/scripts/common.js?v=20260817"></script>
+    <script src="https://static-web.stcn.com/static/scripts/echarts.min.js"></script>
+<link rel="stylesheet" href="https://static-web.stcn.com/static/scripts/share/css/share.min.css" />
+<script src="https://static-web.stcn.com/static/scripts/share/js/social-share.min.js"></script>
+<script>
+    $(function () {
+        var $body = $("body");
+        fetchStockTagData();
+        asideHotColumnListRefresh();
+        asideHotVideoListRefresh();
+        $(".detail-content img,.detail-content video").each(function (k, v) {
+            let $div = $(
+                '<div class="text-center" style="text-indent: 0em"></div>',
+            );
+            $div.append($(v).clone());
+            $(v).replaceWith($div);
+        });
+        $(".detail-content img").each(function () {
+            $(this).attr("title", "");
+        });
+
+        $body.on("click", ".post-btn", function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var boolean = $this.hasClass("active");
+
+            $.post(
+                $this.data("url"),
+                { id: $this.data("id"), fav: !boolean },
+                function (res) {
+                    layer.msg(res.msg);
+                    if (res.state) {
+                        if (boolean) {
+                            $this.removeClass("active");
+                        } else {
+                            $this.addClass("active");
+                        }
+                    }
+                },
+            );
+        });
+
+        window.loginSuccessCallback = function () {
+            var msg = "";
+            var loading = false;
+            $(".comment-input")
+                .find("textarea")
+                .removeClass("hidden")
+                .on("change", function (e) {
+                    msg = e.target.value;
+                })
+                .end()
+                .find(".ds-tip")
+                .remove()
+                .end();
+            $(".send-comment-btn").click(function () {
+                if (loading) return;
+                var id = $(this).data("id");
+                if ($.trim(msg).length) {
+                    loading = true;
+                    $.post($(this).data("url"), { msg: msg, id: id }, function (res) {
+                        loading = false;
+                        layer.msg(res.msg);
+                        if (res.state) {
+                            $(".comment-list ul").prepend(res.data);
+                            $(".comment-input").find("textarea").val("");
+                        }
+                    });
+                } else {
+                    layer.msg("请输入发言内容");
+                }
+            });
+        };
+
+        var $loadMoreCommentBtn = $(".load-more-comment-btn");
+        var page_time = $loadMoreCommentBtn.data("page-time");
+        $loadMoreCommentBtn.click(function () {
+            var that = $(this);
+            $.getJSON(
+                $(this).data("url"),
+                { page_time: page_time },
+                function (res) {
+                    if (res.data.length) {
+                        page_time = res.page_time;
+                        $(".comment-list ul").append(res.data);
+                    } else {
+                        that.prev().show();
+                        that.hide();
+                    }
+                },
+            );
+        });
+
+        $(".toggle-watermark").click(function () {
+            if ($(this).data("open")) {
+                $body.removeClass("watermark");
+                $(this).data("open", false).text("打开水印");
+            } else {
+                $body.addClass("watermark");
+                $(this).data("open", true).text("关闭水印");
+            }
+        });
+
+        
+        var detailContent$ = document.querySelector(".detail-content");
+        var detailContentTable$ = document.querySelector(
+            ".detail-content table",
+        );
+        $('.font-adjust').click(function(){
+            $(this).toggleClass("active");
+        })
+
+        $(document).click(function(e){
+            if(!$(e.target).closest('.font-adjust').length){
+                $('.font-adjust').removeClass("active");
+            }
+        })
+
+        $(".font-adjust div").click(function () {
+            var textFs = $(this).data("size")
+            $('.detail-content,.detail-content table').css('font-size',textFs)
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
+</script>
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281169049'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1281169049' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281264856'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1281264856' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+</body>
+</html>
+
