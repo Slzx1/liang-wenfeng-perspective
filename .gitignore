@@ -2,3 +2,9 @@ check_inline.txt
 check_inline2.txt
 check_L.txt
 check_result.txt
+
+# 含第三方页面内嵌 key/token 的原始抓取文件（仅本地保留，不入库）
+release/articles/_raw_captures/tmp/hk01_wealth.html
+release/articles/_raw_captures/tmp/laohu.html
+release/articles/_raw_captures/tmp/page.html
+release/articles/_raw_captures/tmp/legis1_ndaa.html
